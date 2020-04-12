@@ -1,5 +1,7 @@
-Deadlock’s Crating Machine
-==========================
+Deadlock’s Crating Machine Revived
+==================================
+
+This is fork of the now deprecated Deadlock's Crating Machine.
 
 **DCM** is a Factorio mod which packs items into crates in order to boost belt
 throughput. If you are a Factorio modder, you can get DCM to automatically
@@ -8,7 +10,7 @@ generate crated versions of items from your own mods, or any other vanilla item.
 Step 1
 ------
 
-Add “?DeadlockCrating” as an optional dependency in your mod’s **info.json**.
+Add “?DeadlockCratingRevived” as an optional dependency in your mod’s **info.json**.
 For example:
 
 ~~~~
@@ -19,7 +21,7 @@ For example:
   "author": "Deadlock989",
   "contact": "",
   "homepage": "",
-  "dependencies": ["base \>= 0.17.0", "?DeadlockCrating"],
+  "dependencies": ["base \>= 0.17.0", "?DeadlockCratingRevived"],
   "description": "Some small quality of life adjustments.",
   "factorio_version": "0.17"
 }
