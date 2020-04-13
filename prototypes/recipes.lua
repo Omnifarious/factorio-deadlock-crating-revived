@@ -2,24 +2,24 @@ local DCM = require "prototypes.shared"
 
 -- the machines
 DCM.create_machine_recipe(1, {
-	{"assembling-machine-1",1},
-	{"electric-engine-unit",1},
-	{"stack-inserter",2},
-	{"steel-plate",20},
+    {"assembling-machine-1",1},
+    {"electric-engine-unit",1},
+    {"stack-inserter",2},
+    {"steel-plate",20},
 })
 
 DCM.create_machine_recipe(2, {
-	{"deadlock-crating-machine-1",1},
-	{"electric-engine-unit",1},
-	{"stack-inserter",2},
-	{"steel-plate",30},
+    {"deadlock-crating-machine-1",1},
+    {"electric-engine-unit",1},
+    {"stack-inserter",2},
+    {"steel-plate",30},
 })
 
 DCM.create_machine_recipe(3, {
-	{"deadlock-crating-machine-2",1},
-	{"electric-engine-unit",1},
-	{"stack-inserter",2},
-	{"steel-plate",50},
+    {"deadlock-crating-machine-2",1},
+    {"electric-engine-unit",1},
+    {"stack-inserter",2},
+    {"steel-plate",50},
 })
 
 -- crafting tab groups

@@ -82,30 +82,30 @@ function DCM.generate_crates(this_item, icon_size)
         return
     end
     local icons = {
-		{
-			icon = "__DeadlockCrating__/graphics/icons/mipmaps/crate.png",
-			icon_size = DCM.ITEM_ICON_SIZE,
-			icon_mipmaps = 4,
-		}
-	}
+        {
+            icon = "__DeadlockCrating__/graphics/icons/mipmaps/crate.png",
+            icon_size = DCM.ITEM_ICON_SIZE,
+            icon_mipmaps = 4,
+        }
+    }
     if base_item.icon then
-		-- table.insert(icons, {
-			-- icon = base_item.icon,
-			-- scale = 0.7 * 32 / base_item.icon_size,
-			-- icon_size = base_item.icon_size,
-			-- icon_mipmaps = base_item.icon_mipmaps,
-			-- tint = {0,0,0,0.75},
-			-- shift = {2, 2},
-		-- })
-		table.insert(icons, {
-			icon = base_item.icon,
-			scale = 0.7 * 32 / base_item.icon_size,
-			icon_size = base_item.icon_size,
-			icon_mipmaps = base_item.icon_mipmaps,
-		})
+        -- table.insert(icons, {
+            -- icon = base_item.icon,
+            -- scale = 0.7 * 32 / base_item.icon_size,
+            -- icon_size = base_item.icon_size,
+            -- icon_mipmaps = base_item.icon_mipmaps,
+            -- tint = {0,0,0,0.75},
+            -- shift = {2, 2},
+        -- })
+        table.insert(icons, {
+            icon = base_item.icon,
+            scale = 0.7 * 32 / base_item.icon_size,
+            icon_size = base_item.icon_size,
+            icon_mipmaps = base_item.icon_mipmaps,
+        })
     elseif base_item.icons then
         for _,icon in pairs(base_item.icons) do
-			local temp_icon = table.deepcopy(icon)
+            local temp_icon = table.deepcopy(icon)
             temp_icon.scale = 0.7 * (temp_icon.scale or 1)
             if not temp_icon.icon_size then temp_icon.icon_size = base_item.icon_size end
             table.insert(icons, temp_icon)
@@ -547,8 +547,8 @@ function DCM.create_machine_item(tier, colour)
             subgroup = "production-machine",
             stack_size = 50,
             icons = {
-				{ icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
-				{ icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
+                { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
+                { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
             },
             icon_size = DCM.ITEM_ICON_SIZE,
             order = "z[crating-machine]-" .. order,
