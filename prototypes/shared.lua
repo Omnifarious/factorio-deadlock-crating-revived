@@ -83,7 +83,7 @@ function DCM.generate_crates(this_item, icon_size)
     end
     local icons = {
         {
-            icon = "__DeadlockCrating__/graphics/icons/mipmaps/crate.png",
+            icon = "__DeadlockCratingRevived__/graphics/icons/mipmaps/crate.png",
             icon_size = DCM.ITEM_ICON_SIZE,
             icon_mipmaps = 4,
         }
@@ -116,8 +116,8 @@ function DCM.generate_crates(this_item, icon_size)
     end
     local packrecipeicons = table.deepcopy(icons)
     local unpackrecipeicons = table.deepcopy(icons)
-    table.insert(packrecipeicons, 2, { icon = "__DeadlockCrating__/graphics/icons/square/arrow-d-64.png", scale = 0.25, icon_size = 64, shift = {0, 8} } )
-    table.insert(unpackrecipeicons, 2, { icon = "__DeadlockCrating__/graphics/icons/square/arrow-u-64.png", scale = 0.25, icon_size = 64, shift = {0, -8} } )
+    table.insert(packrecipeicons, 2, { icon = "__DeadlockCratingRevived__/graphics/icons/square/arrow-d-64.png", scale = 0.25, icon_size = 64, shift = {0, 8} } )
+    table.insert(unpackrecipeicons, 2, { icon = "__DeadlockCratingRevived__/graphics/icons/square/arrow-u-64.png", scale = 0.25, icon_size = 64, shift = {0, -8} } )
     -- the item
     data:extend {
         -- the item
@@ -369,8 +369,8 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
         next_upgrade = upgrade,
         fast_replaceable_group = "crating-machine",
         icons = {
-            { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
-            { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
+            { icon = "__DeadlockCratingRevived__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
+            { icon = "__DeadlockCratingRevived__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
         },
         minable = {
             mining_time = 0.5,
@@ -413,7 +413,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
             layers = {
                 {
                     hr_version = {
-                        filename = "__DeadlockCrating__/graphics/entities/high/crating-base.png",
+                        filename = "__DeadlockCratingRevived__/graphics/entities/high/crating-base.png",
                         animation_speed = 1 / speed,
                         priority = "high",
                         frame_count = 60,
@@ -423,7 +423,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                         shift = {0, 0},
                         width = 192
                     },
-                    filename = "__DeadlockCrating__/graphics/entities/low/crating-base.png",
+                    filename = "__DeadlockCratingRevived__/graphics/entities/low/crating-base.png",
                     animation_speed = 1 / speed,
                     priority = "high",
                     frame_count = 60,
@@ -435,7 +435,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                 },
                 {
                     hr_version = {
-                        filename = "__DeadlockCrating__/graphics/entities/high/crating-mask.png",
+                        filename = "__DeadlockCratingRevived__/graphics/entities/high/crating-mask.png",
                         animation_speed = 1 / speed,
                         priority = "high",
                         repeat_count = 60,
@@ -445,7 +445,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                         width = 192,
                         tint = colour
                     },
-                    filename = "__DeadlockCrating__/graphics/entities/low/crating-mask.png",
+                    filename = "__DeadlockCratingRevived__/graphics/entities/low/crating-mask.png",
                     animation_speed = 1 / speed,
                     priority = "high",
                     repeat_count = 60,
@@ -458,7 +458,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                 {
                     hr_version = {
                         draw_as_shadow = true,
-                        filename = "__DeadlockCrating__/graphics/entities/high/crating-shadow.png",
+                        filename = "__DeadlockCratingRevived__/graphics/entities/high/crating-shadow.png",
                         animation_speed = 1 / speed,
                         repeat_count = 60,
                         height = 192,
@@ -467,7 +467,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                         width = 384
                     },
                     draw_as_shadow = true,
-                    filename = "__DeadlockCrating__/graphics/entities/low/crating-shadow.png",
+                    filename = "__DeadlockCratingRevived__/graphics/entities/low/crating-shadow.png",
                     animation_speed = 1 / speed,
                     repeat_count = 60,
                     height = 96,
@@ -483,7 +483,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                     hr_version = {
                         animation_speed = 1 / speed,
                         blend_mode = "additive",
-                        filename = "__DeadlockCrating__/graphics/entities/high/crating-working.png",
+                        filename = "__DeadlockCratingRevived__/graphics/entities/high/crating-working.png",
                         frame_count = 30,
                         line_length = 10,
                         height = 192,
@@ -494,7 +494,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                     },
                     animation_speed = 1 / speed,
                     blend_mode = "additive",
-                    filename = "__DeadlockCrating__/graphics/entities/low/crating-working.png",
+                    filename = "__DeadlockCratingRevived__/graphics/entities/low/crating-working.png",
                     frame_count = 30,
                     line_length = 10,
                     height = 96,
@@ -510,7 +510,7 @@ function DCM.create_machine_entity(tier, colour, speed, pollution, energy, drain
                 },
             },
         },
-        working_sound = { filename = "__DeadlockCrating__/sounds/deadlock-crate-machine.ogg", volume = 0.7 },
+        working_sound = { filename = "__DeadlockCratingRevived__/sounds/deadlock-crate-machine.ogg", volume = 0.7 },
         open_sound = {
             filename = "__base__/sound/machine-open.ogg",
             volume = 0.75
@@ -547,8 +547,8 @@ function DCM.create_machine_item(tier, colour)
             subgroup = "production-machine",
             stack_size = 50,
             icons = {
-                { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
-                { icon = "__DeadlockCrating__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
+                { icon = "__DeadlockCratingRevived__/graphics/icons/mipmaps/crating-icon-base.png", icon_size = DCM.ITEM_ICON_SIZE, icon_mipmaps = 4 },
+                { icon = "__DeadlockCratingRevived__/graphics/icons/mipmaps/crating-icon-mask.png", icon_size = DCM.ITEM_ICON_SIZE, tint = colour, icon_mipmaps = 4 },
             },
             icon_size = DCM.ITEM_ICON_SIZE,
             order = "z[crating-machine]-" .. order,
@@ -601,8 +601,8 @@ function DCM.create_crating_technology(tier, colour, prerequisites, unit)
             prerequisites = prerequisites,
             unit = unit,
             icons = {
-                { icon = "__DeadlockCrating__/graphics/icons/square/crating-icon-base-128.png" },
-                { icon = "__DeadlockCrating__/graphics/icons/square/crating-icon-mask-128.png", tint = colour },
+                { icon = "__DeadlockCratingRevived__/graphics/icons/square/crating-icon-base-128.png" },
+                { icon = "__DeadlockCratingRevived__/graphics/icons/square/crating-icon-mask-128.png", tint = colour },
             },
             icon_size = 128,
             order = order,
