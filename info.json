@@ -1,11 +1,12 @@
 {
     "name": "DeadlockCratingRevived",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "title": "Deadlock's Crating Machine Revived",
     "author": "Deadlock989",
     "contact": "",
     "homepage": "",
-    "dependencies": ["base >= 0.17.35", "?ReStack"],
+    "dependencies": ["base >= 0.17.35", "?ReStack", "! DeadlockCrating >= 1.6.0"],
+
     "description": "Pack resources into crates and unpack them where needed. Hugely boosts belt throughput, at a cost.",
     "factorio_version": "0.18"
 }

@@ -1,5 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.0
+Date: 24. 04. 2019
+  Changes:
+    - Mark as incompatible with mysteriously updated for 0.18 Deadlock's Crating Machine.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.0
 Date: 12. 04. 2019
   Changes:
     - Revive this mod under a new name
